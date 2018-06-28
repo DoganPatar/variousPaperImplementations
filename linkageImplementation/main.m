@@ -1,3 +1,5 @@
+%This file is for testing and showing how to use functions.
+
 %generating basic dataset
 dataSet = ceil(10*rand([10,1000]));
 

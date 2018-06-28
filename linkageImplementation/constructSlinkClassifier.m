@@ -1,5 +1,8 @@
 function [treeMatrix]=constructSlinkClassifier(features)
 
+% For single linkage, constructs a matrix which correspons to 
+% the classifier.
+
 [pies,lambda]=slink(features);
 
 [distSort, I] = sort(lambda);

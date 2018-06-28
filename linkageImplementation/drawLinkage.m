@@ -1,5 +1,12 @@
 function [treeMatrix]= drawLinkage(pies,lambda)
 
+% pies,lambda   : output of SLink
+% treeMatrix    : Same output linkage() function of matlab gives.
+
+%Function transforms the Slink output to matlabs linkage() output and 
+%draws the dendrogram of the Slink
+
+
 [distSort, I] = sort(lambda);
 numOfLevel = length(lambda)-1;
 tempLabel = I;

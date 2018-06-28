@@ -3,6 +3,8 @@ function [choice] = classifyOnSlink(x,treeMatrix,features)
 %treeMatrix : constructed classifier with constructSlinkClassifier
 %features   : all leaves of Slink
 
+% Function returns corresponding cluster/class of the new x sample. 
+
 [ind,~] = size(treeMatrix);
 leafSize = ind +1;
 while 1
