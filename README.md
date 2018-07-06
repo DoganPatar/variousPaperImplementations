@@ -12,7 +12,7 @@ This repository contains my own implementation to the variety of papers.
 - **Ramp preserving PeronaMalik model by Q. Chen, P. Montesinos, Q.S. Sun**
 - **Adaptive Perona–Malik Model Based on the Variable Exponent for Image Denoising by Zhichang Guo, Jiebao Sun, Dazhi Zhang, and Boying Wu**
 - Also combination of above two method is implemented.
-![diffFilter](anisotropic diffusion filters/allFilters.gif)
+![diffFilter](anisotropicDiffusionFilters/allFilters.gif)
 
 
 # ToDo
