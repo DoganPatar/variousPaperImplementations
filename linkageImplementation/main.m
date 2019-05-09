@@ -4,7 +4,7 @@
 dataSet = ceil(10*rand([10,1000]));
 
 tic
-%single linkage
+% Single linkage
 [pies,lambda]=slink(dataSet);
 tree = drawLinkage(pies,lambda);
 toc
@@ -15,7 +15,7 @@ class = classifyOnSlink(x,classifier,dataSet);
 
 
 % tic
-% % %complete linkage 
+% % Complete linkage 
 % [pies,lambda]=clink(dataSet);
 % tree = drawLinkage(pies,lambda);
 % toc

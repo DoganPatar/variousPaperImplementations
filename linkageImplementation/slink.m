@@ -10,14 +10,13 @@ lambda = Inf([1,samples]);
 
 % incrementally feeding the data to the SLINK
 for s=1:samples
-    newData = dataSet(s,:);
     n = s-1;
     %1st Step
     pies(n+1) = n+1;
     lambda(n+1) = Inf;
     indx=1:1:n;
     %2nd Step
-    M = pdist2(newData,dataSet(1:n,:));
+    M = pdist2(dataSet(s,:),dataSet(1:n,:));
     %3rd Step
     for i=1:n
         if lambda(i)>=M(i)

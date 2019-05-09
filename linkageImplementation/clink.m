@@ -10,14 +10,13 @@ lambda=Inf([1,samples]);
 
 % incrementally feeding the data to the CLINK
 for s=2:samples
-    newData = dataSet(s,:);
     
     n = s-1;
     pies(n+1) = n+1;
     lambda(n+1) = Inf;
     
     %newSamples eucledian distance to others
-    M = pdist2(newData,dataSet(1:n,:));
+    M = pdist2(dataSet(s,:),dataSet(1:n,:));
     for i=1:n
         if lambda(i)< M(i)
             M(pies(i)) = max(M(pies(i)),M(i));
